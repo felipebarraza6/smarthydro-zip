@@ -1,0 +1,16 @@
+[
+	{
+		"nombre": "Caudal-chacay2-raymundo",
+		"dataEndpoint": "https://smarthydro.central-iot.com/apirest/lecturas/",
+		"deviceUuid": "94162bd8-543b-42ac-86e8-3d6fc4c664af",
+		"transform":  "2.2 + x/10.0",
+		"readingInterval": 300
+	},
+	{
+		"nombre": "ph-chacay2-raymundo",
+		"dataEndpoint": "https://smarthydro.central-iot.com/apirest/lecturas/",
+		"deviceUuid": "a72e8739-7892-4afd-8430-b777a28eaa8b",
+		"transform":  "5.8 + x/5.0",
+		"readingInterval": 300
+	}
+]

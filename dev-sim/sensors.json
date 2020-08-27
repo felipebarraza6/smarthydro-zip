@@ -1,0 +1,20 @@
+[
+	{
+		"nombre": "Caudal",
+		"sensorCik": "e19ae28c6b38491a468147bce37c41af60516654",
+		"dataAlias": "3GRECUC1V",
+		"dataEndpoint": "https://smarthydro.central-iot.com/apirest/lecturas/",
+		"deviceUuid": "1a772960-5927-44b2-89a7-21a09698ed63",
+		"transform":  "x",
+		"readingInterval": 300
+	},
+	{
+		"nombre": "Nivel de agua",
+		"sensorCik": "e19ae28c6b38491a468147bce37c41af60516654",
+		"dataAlias": "3GRECUC2V",
+		"dataEndpoint": "https://smarthydro.central-iot.com/apirest/lecturas/",
+		"deviceUuid": "f258aa34-136a-4836-939c-6c413d65c993",
+		"transform":  "x",
+		"readingInterval": 300
+	}
+]

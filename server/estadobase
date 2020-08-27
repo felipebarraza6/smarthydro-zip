@@ -1,0 +1,154 @@
+{
+	"users": [
+		{
+			"username": "user01",
+			"password": "user01"
+		},
+		{
+			"username": "user02",
+			"password": "user02"
+		}
+	],
+
+	"groups": ["group01", "group02", "quasar"],
+	
+	"variables": [
+		{
+			"nombre": "Temperatura",
+			"descripcion": "medida de la actividad cinematica molecular"
+		},
+		{
+			"nombre": "Presion",
+			"descripcion": "medida de unidad de fuerza por unidad de area"
+		},
+		{
+			"nombre": "Ruido",
+			"descripcion": "medicion de amplitud de ondas de presion"
+		}
+	],
+
+	"unidades": [
+		{
+			"abreviacion": "°C",
+			"nombre": "grados centigrados"
+		},
+		{
+			"abreviacion": "K",
+			"nombre": "grados Kelvin"
+		},
+		{
+			"abreviacion": "Pa",
+			"nombre": "Pascales"
+		},
+		{
+			"abreviacion": "dB",
+			"nombre": "decibeles"
+		}
+	],
+
+	"proyectos": [
+		{
+			"propietario": "user01",
+			"grupo": "quasar",
+			"nombre": "quasar-hq"
+		},
+		{
+			"propietario": "gus",
+			"grupo": "quasar",
+			"nombre": "quasar-stgo"
+		},
+		{
+			"propietario": "user02",
+			"grupo": "group02",
+			"nombre": "proyecto02"
+		},
+		{
+			"propietario": "gus",
+			"grupo": "group01",
+			"nombre": "proyecto03"
+		}
+	],
+
+	"sensores": [
+		{
+			"nombre": "sensor-01",
+			"descripcion": "descripcion-01",
+			"uuid": "58b0f8ba-ecf3-4252-9d19-b73a1eb047f8",
+			"variable": "Temperatura",
+			"unidad": "°C",
+			"proyecto": "quasar-hq"			
+		},
+		{
+			"nombre": "sensor-02",
+			"descripcion": "descripcion-02",
+			"uuid": "afb45992-86ce-417a-99db-04800693bc1a",
+			"variable": "Temperatura",
+			"unidad": "°C",
+			"proyecto": "quasar-hq"			
+		},
+		{
+			"nombre": "sensor-03",
+			"descripcion": "descripcion-03",
+			"uuid": "027df7ee-828e-4bb6-b5a3-e1205c59645c",
+			"variable": "Ruido",
+			"unidad": "dB",
+			"proyecto": "quasar-hq"			
+		},
+		{
+			"nombre": "sensor-04",
+			"descripcion": "descripcion-04",
+			"uuid": "3657ad2f-ca88-4f28-8368-df3b5c50792b",
+			"variable": "Ruido",
+			"unidad": "dB",
+			"proyecto": "proyecto03"			
+		},
+		{
+			"nombre": "sensor-05",
+			"descripcion": "descripcion-05",
+			"uuid": "cdd7c671-35c6-4bee-a151-38eec16e7f69",
+			"variable": "Temperatura",
+			"unidad": "°C",
+			"proyecto": "proyecto03"			
+		},
+		{
+			"nombre": "sensor-06",
+			"descripcion": "descripcion-06",
+			"uuid": "d22daa43-ea10-4a6d-b1b1-6e80d3f3bdd0",
+			"variable": "Ruido",
+			"unidad": "dB",
+			"proyecto": "quasar-stgo"			
+		},
+		{
+			"nombre": "sensor-07",
+			"descripcion": "descripcion-07",
+			"uuid": "d1fe7727-5a35-4e47-bb80-3be4a6775854",
+			"variable": "Ruido",
+			"unidad": "dB",
+			"proyecto": "quasar-stgo"			
+		},
+		{
+			"nombre": "sensor-08",
+			"descripcion": "descripcion-08",
+			"uuid": "90db846e-b69c-4b02-8134-d92e08cf3caf",
+			"variable": "Temperatura",
+			"unidad": "°C",
+			"proyecto": "quasar-stgo"			
+		},
+		{
+			"nombre": "sensor-09",
+			"descripcion": "descripcion-09",
+			"uuid": "2797571a-86cb-4e49-8e20-4ec6fdebc160",
+			"variable": "Presion",
+			"unidad": "Pa",
+			"proyecto": "proyecto02"			
+		},
+		{
+			"nombre": "sensor-10",
+			"descripcion": "descripcion-10",
+			"uuid": "0deafc78-533e-4f09-abc9-1306fcbd9b4d",
+			"variable": "Presion",
+			"unidad": "Pa",
+			"proyecto": "proyecto02"			
+		}
+	]
+}

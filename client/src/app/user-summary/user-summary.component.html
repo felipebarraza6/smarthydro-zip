@@ -1,0 +1,78 @@
+<div class="main-content">
+	<div class="container-fluid">
+        <div [hidden]="!loading">
+          <img src="/assets/img/loader.gif" alt="CARGANDO">
+      </div>
+      <div [hidden]="loading">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title "> Sensores </h4>
+                        <p class="card-category"> Sensores asociados al usuario</p>
+                    </div>
+                    <div class="card-body">
+                        <div *ngFor="let s of sensors; index as i">
+                            <h4> <b>Proyecto: </b>{{s.proyecto.nombre}} - <b>Nombre: </b>{{s.nombre}}</h4>
+                            <p> <b>UUID: </b><a [routerLink]="['/sensor', s.uuid]">{{s.uuid}} </a>  </p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class=" text-primary">
+                                        <th style="text-align: center;"> Variable </th>
+                                        <th style="text-align: center;"> Unidad </th>
+                                        <th style="text-align: center;"> Último valor </th>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td align="center"> {{s.variable}}  </td>
+                                            <td align="center" class="text-primary"> {{ s.unidad}} </td>
+                                            <td align="center"> {{s.last_received_value | number }} <i> hace {{deltas[i].value | number:'1.0-0'}} {{deltas[i].unit}}</i> </td>                                           
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                        </div>
+
+                        <!-- 
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                   
+                                    <th style="text-align: center;"> ID </th>
+                                    <th style="text-align: center;"> Nombre </th>
+                                    <th style="text-align: center;"> Proyecto </th> 
+                                    <th style="text-align: center;"> Variable </th>
+                                    <th style="text-align: center;"> Unidad </th>
+                                    <th style="text-align: center;"> Último valor </th>
+                                    
+                                    <th style="text-align: center;"> ¿Logging?</th>
+                                    <th style="text-align: center;"> Descarga </th>  
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let s of sensors; index as i;">
+                                         
+                                        <td align="center"> <a [routerLink]="['/sensor', s.uuid]">{{s.uuid}} </a>  </td>
+                                        <td align="center"> {{s.nombre}}  </td>
+                                        <td align="center"> {{s.proyecto.nombre}}  </td>  
+                                        <td align="center"> {{s.variable}}  </td>
+                                        <td align="center" class="text-primary"> {{ s.unidad}} </td>
+                                        <td align="center"> {{s.last_received_value | number }} <i> hace {{deltas[i].value | number:'1.0-0'}} {{deltas[i].unit}}</i> </td>
+                                        
+                                        <td align="center"> {{ s.logging}}  </td>
+                                        <td align="center"> <i *ngIf="!downloading" class="material-icons" (click)="downloadSensorData(s.uuid)">cloud_download</i></td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>  -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
